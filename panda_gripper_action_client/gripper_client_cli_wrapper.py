@@ -1,9 +1,7 @@
 import subprocess
 
+#TODO: properly document class and clean implementation
 class PandaGripperClient:
-    def test(self):
-        subprocess.run(["ros2"])
-
     def homing(self):
         subprocess.run(["ros2","action", "send_goal", "/panda_gripper/homing", "franka_msgs/action/Homing", "{}"])
 
